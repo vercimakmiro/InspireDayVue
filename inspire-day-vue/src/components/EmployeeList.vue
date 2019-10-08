@@ -20,6 +20,7 @@
             </md-card>
         </div>
     </div>
+    
     <div v-if="isLoadingData" class="spin">
         <i class="material-icons">sync</i>
     </div>
@@ -39,6 +40,7 @@ export default class EmployeeList extends Vue {
 
     private created() {
         this.isLoadingData = true;
+        //in more complex applications the use of models is encouraged
         this.$http.get('https://inpireday.azurewebsites.net/getitems').then((response: AxiosResponse) => {
         this.employees = response.data.map((val: any) => ({
             firstname: val.firstname,

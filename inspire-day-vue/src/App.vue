@@ -1,6 +1,7 @@
+
 <template>
   <div id="app">
-    
+    <!--tags prefixed with md signify use of material design components within this project-->
     <md-app md-waterfall md-mode="fixed">
       
       <md-app-toolbar class="md-primary">

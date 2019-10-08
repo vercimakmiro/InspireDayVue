@@ -1,3 +1,7 @@
+/*
+  Good resource on initial project structure : 
+  https://flaviocopes.com/vue-first-app/
+*/
 import Vue from 'vue';
 import App from './App.vue';
 import router from './router';
