@@ -8,7 +8,7 @@
 
          <h1>Other demos</h1>
          <div>Angular demo: <a href="https://github.com/MKovacik/InspireDayAngular">https://github.com/MKovacik/InspireDayAngular</a> </div>
-         <div>ReactJS demo: <a href="https://github.com/vercimakmiro/InspireDayVue">https://github.com/vercimakmiro/InspireDayVue</a> </div>
+         <div>ReactJS demo: <!--<a href="https://github.com/vercimakmiro/InspireDayVue">https://github.com/vercimakmiro/InspireDayVue</a>--> will be added later :) </div>
     </div>
 </template>
 
