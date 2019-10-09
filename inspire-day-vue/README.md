@@ -1,29 +1,22 @@
 # inspire-day-vue
 
+Application created to demonstrate basic VueJS concepts.
+
+**Demonstrates:**
+
+- basic application structure
+- vue + typescript cooperation
+- single file components
+- routing
+- axiom http requests
+
+Aditional information, including resource links can be found inside of the source codes.
+
 ## Project setup
 ```
-npm install
+clone this repository
+in your console, navigate to the project folder
+run "npm install" in your console
+after the command is successfully finished, run "npm run serve"
+in your browser visit " http://localhost:8080/"
 ```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
