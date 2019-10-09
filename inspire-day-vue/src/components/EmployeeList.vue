@@ -3,7 +3,7 @@
     <div style="display:inline-block;">
         <h1>Mr. Handsome 2019 Winners</h1>
         <div v-if="!isLoadingData">
-            <md-card class="employee-card" v-for="employee in employees" v-bind:key="employee.id" md-with-hover>
+            <md-card @click.native="showDetail(employee.id)" class="employee-card" v-for="employee in employees" v-bind:key="employee.id" md-with-hover>
                 <md-ripple>
                     <md-card-header>
                         <md-card-header-text>
@@ -38,6 +38,16 @@ export default class EmployeeList extends Vue {
     private employees: any[] = [];
     private isLoadingData  = false;
 
+    private showDetail(id: string) {
+        let urlId = 0;
+        if (id === 'janplavka') {
+            urlId = 1;
+        } else if (id === 'miroslavvercimak') {
+            urlId = 2;
+        }
+        this.$router.push('detail/' + urlId );
+    }
+
     private created() {
         this.isLoadingData = true;
         // in more complex applications the use of models is encouraged
@@ -48,7 +58,7 @@ export default class EmployeeList extends Vue {
             bio: val.bio,
             tagline: val.tagline,
             twitter: val.twitter,
-            imgSrc: "http://placekitten.com/200/200?image=" + val.firstname.length,
+            imgSrc: 'http://placekitten.com/200/200?image=' + val.firstname.length,
             id: val.id,
         }));
         this.isLoadingData = false;

@@ -8,7 +8,7 @@
         <span class="md-title">Inspire Day 2019 - VueJS Demonstration</span>
           <div class="md-toolbar-section-end">
                 <md-button @click="$router.push('/')" class="md-primary">Home</md-button>
-                <md-button @click="$router.push('contact')" class="md-primary">Contact</md-button>
+                <md-button @click="$router.push('/list')" class="md-primary">Employees</md-button>
           </div>
       </md-app-toolbar>
 

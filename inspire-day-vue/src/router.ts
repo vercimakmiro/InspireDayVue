@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Home from '@/views/Home.vue';
-import Contact from '@/views/Contact.vue';
+import List from '@/views/List.vue';
 
 /**
  * To get the material design guidelines out of the box, Vue Material project was used.
@@ -38,12 +38,12 @@ export default new Router({
       component: Home,
     },
     {
-      path: '/contact',
-      name: 'contact',
-      component: Contact,
+      path: '/list',
+      name: 'list',
+      component: List,
     },
     {
-      path: '/detail:id',
+      path: '/detail/:id',
       name: 'detail',
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
