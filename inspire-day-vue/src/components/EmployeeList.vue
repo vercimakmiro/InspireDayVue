@@ -40,7 +40,7 @@ export default class EmployeeList extends Vue {
 
     private created() {
         this.isLoadingData = true;
-        //in more complex applications the use of models is encouraged
+        // in more complex applications the use of models is encouraged
         this.$http.get('https://inpireday.azurewebsites.net/getitems').then((response: AxiosResponse) => {
         this.employees = response.data.map((val: any) => ({
             firstname: val.firstname,
@@ -48,7 +48,7 @@ export default class EmployeeList extends Vue {
             bio: val.bio,
             tagline: val.tagline,
             twitter: val.twitter,
-            imgSrc: '@/assets/' + val.imgSrc,
+            imgSrc: "http://placekitten.com/200/200?image=" + val.firstname.length,
             id: val.id,
         }));
         this.isLoadingData = false;

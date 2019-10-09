@@ -1,5 +1,5 @@
 /*
-  Good resource on initial project structure : 
+  Good resource on initial project structure :
   https://flaviocopes.com/vue-first-app/
 */
 import Vue from 'vue';
